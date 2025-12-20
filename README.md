@@ -26,12 +26,22 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip ed
 ### Adımlar
 1. Depoyu klonlayın veya ZIP olarak indirin:
 2. Proje klasörüne giriş yapın (meteor-kacis-oyunu)
-3. __pycache__ klasörüne giriş yapın
-4. Oyunu Başlat dosyasına tıklayın ve çalıştırın.
 
-### Adımlar MAC işletim sistem için:
+### MAC işletim sistem için:
 1. Dosyanın içindeki __dist__ klasörüne giriş yapın.
 2. Meteor Kacis Oyunu çalıştırın.
+
+### Windows Gezgini'nde Meteor Oyunu klasörüne gidin.
+build_windows.bat dosyasına çift tıklayın.
+İşlem tamamlanana kadar bekleyin.
+dist klasöründe Meteor Kacis Oyunu.exe dosyası oluşacak.
+
+### Sonuç
+Mac: dist/Meteor Kacis Oyunu.app (çift tıklayarak çalıştırılır)
+Windows: dist/Meteor Kacis Oyunu.exe (çift tıklayarak çalıştırılır)
+Her iki platformda da oluşturulan dosyalar bağımsız çalışır (Python yüklü olmasına gerek yok).
+Detaylı talimatlar için WINDOWS_KULLANIM.md ve MAC_KULLANIM.md dosyalarına bakabilirsiniz.
+
 
 
 ---
