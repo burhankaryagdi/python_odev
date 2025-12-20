@@ -130,27 +130,35 @@ class Oyun:
         """Mevcut seviyeye göre oyun parametrelerini döndürür"""
         if self.seviye == 1:
             return {
-                "meteor_hiz": 4,
+                "meteor_hiz": 2,  # Çok yavaş başlangıç
                 "meteor_yaricap": 20,
-                "spawn_araligi": 25,  # Daha sık meteor
-                "meteor_sayisi": 2,  # Her seferinde kaç meteor
+                "spawn_araligi": 60,  # Çok az sık meteor
+                "meteor_sayisi": 1,  # Her seferinde tek meteor
                 "arka_plan": SIYAH
             }
         elif self.seviye == 2:
             return {
-                "meteor_hiz": 5.5,  # %50 artış
-                "meteor_yaricap": 25,
-                "spawn_araligi": 20,  # Daha da sık
-                "meteor_sayisi": 3,  # Daha fazla meteor
+                "meteor_hiz": 2.5,  # Biraz daha hızlı
+                "meteor_yaricap": 20,
+                "spawn_araligi": 50,  # Biraz daha sık
+                "meteor_sayisi": 1,  # Hala tek meteor
                 "arka_plan": KOYU_MAVI
             }
-        else:  # Seviye 3
+        elif self.seviye == 3:
             return {
-                "meteor_hiz": 8,  # Çok hızlı
-                "meteor_yaricap": 20,
-                "spawn_araligi": 15,  # Çok sık
-                "meteor_sayisi": 4,  # Çok fazla meteor
+                "meteor_hiz": 3,  # Orta hız
+                "meteor_yaricap": 22,
+                "spawn_araligi": 40,  # Orta sıklık
+                "meteor_sayisi": 2,  # İki meteor
                 "arka_plan": KIRMIZI_MAVI
+            }
+        else:  # Seviye 4
+            return {
+                "meteor_hiz": 3.5,  # Biraz hızlı
+                "meteor_yaricap": 20,
+                "spawn_araligi": 35,  # Biraz daha sık
+                "meteor_sayisi": 2,  # İki meteor
+                "arka_plan": MOR
             }
     
     def meteor_olustur(self):
@@ -187,13 +195,15 @@ class Oyun:
             return
         
         # Seviye kontrolü
-        if self.skor >= 10 and self.seviye == 1:
+        if self.skor >= 50 and self.seviye == 1:
             self.seviye = 2
-        elif self.skor >= 25 and self.seviye == 2:
+        elif self.skor >= 150 and self.seviye == 2:
             self.seviye = 3
+        elif self.skor >= 300 and self.seviye == 3:
+            self.seviye = 4
         
         # Kazanma kontrolü
-        if self.skor >= 50:
+        if self.skor >= 500:
             self.durum = OYUN_KAZANDI
             return
         
