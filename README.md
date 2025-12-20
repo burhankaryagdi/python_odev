@@ -29,6 +29,8 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip ed
 3. __pycache__ klasörüne giriş yapın
 4. Oyunu Başlat dosyasına tıklayın ve çalıştırın.
 
+---
+
 ### 🕹️ 3. Kullanım Bilgisi
 Oyun açıldığında uzay geminiz ekranın altında belirecektir.
 
