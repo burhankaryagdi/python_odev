@@ -28,4 +28,20 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip ed
 2. Proje klasörüne giriş yapın (meteor-kacis-oyunu)
 3. __pycache__ klasörüne giriş yapın
 4. Oyunu Başlat dosyasına tıklayın ve çalıştırın.
+
+### Adımlar MAC işletim sistem için:
+1. Dosyanın içindeki __dist__ klasörüne giriş yapın.
+2. Meteor Kacis Oyunu çalıştırın.
+
+
+---
+
+### 🕹️ 3. Kullanım Bilgisi
+Oyun açıldığında uzay geminiz ekranın altında belirecektir.
+
+Hareket: A ve D tuşlarını veya Sol/Sağ Ok tuşlarını kullanarak gemiyi sağa sola kaydırın.
+
+Yeniden Başlatma: Kaybettiğinizde veya kazandığınızda R tuşuna basarak oyunu sıfırlayabilirsiniz.
+
+Hedef: Meteorlara çarpmadan 50 skora ulaşarak oyunu tamamlayın.
    
