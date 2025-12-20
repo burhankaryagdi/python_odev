@@ -29,6 +29,11 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip ed
 3. __pycache__ klasörüne giriş yapın
 4. Oyunu Başlat dosyasına tıklayın ve çalıştırın.
 
+### Adımlar MAC işletim sistem için:
+1. Dosyanın içindeki __dist__ klasörüne giriş yapın.
+2. Meteor Kacis Oyunu çalıştırın.
+
+
 ---
 
 ### 🕹️ 3. Kullanım Bilgisi
