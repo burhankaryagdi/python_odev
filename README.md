@@ -1,5 +1,5 @@
 # python_odev
-MÜHENDİSLİKTE BİLGİSAYAR UYGULAMALARI I Dersi için yaptığım 2D oyun projesi.
+İSKENDERUN TEKNİK ÜNİVERSİTESİ MÜHENDİSLİKTE BİLGİSAYAR UYGULAMALARI I Dersi için yaptığım 2D oyun projesi.
 
 # 🛸 Meteor Kaçış Oyunu
 
